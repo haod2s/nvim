@@ -7,8 +7,8 @@
 --   command_mode = "c",
 
 -- leader key 为空
--- vim.g.mapleader = " "
--- vim.g.maplocalleader = " "
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 local opt = {
   noremap = true,
@@ -454,5 +454,27 @@ pluginKeys.gitsigns_on_attach = function(bufnr)
   map({ "o", "x" }, "ig", ":<C-U>Gitsigns select_hunk<CR>")
 end
 -- gitsigns end
+
+-- vgit
+pluginKeys.vgitList = {
+    ['n <C-k>'] = 'hunk_up',
+    ['n <C-j>'] = 'hunk_down',
+    ['n <leader>gs'] = 'buffer_hunk_stage',
+    ['n <leader>gr'] = 'buffer_hunk_reset',
+    ['n <leader>gp'] = 'buffer_hunk_preview',
+    ['n <leader>gb'] = 'buffer_blame_preview',
+    ['n <leader>gf'] = 'buffer_diff_preview',
+    ['n <leader>gh'] = 'buffer_history_preview',
+    ['n <leader>gu'] = 'buffer_reset',
+    -- ['n <leader>gg'] = 'buffer_gutter_blame_preview',
+    ['n <leader>glu'] = 'project_hunks_preview',
+    ['n <leader>gls'] = 'project_hunks_staged_preview',
+    ['n <leader>gd'] = 'project_diff_preview',
+    ['n <leader>gq'] = 'project_hunks_qf',
+    ['n <leader>gx'] = 'toggle_diff_preference',
+}
+
+-- laygit
+map("n", "<leader>gg", "<cmd>LazyGit<CR>", opt)
 
 return pluginKeys

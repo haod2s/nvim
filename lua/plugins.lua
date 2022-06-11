@@ -135,6 +135,8 @@ packer.startup({
     -- use("windwp/nvim-autopairs")
     -- git
     -- use({ "lewis6991/gitsigns.nvim" })
+    use({"tanvirtin/vgit.nvim", requires = {"nvim-lua/plenary.nvim"},})
+    use("kdheepak/lazygit.nvim")
     -- vimspector
     -- use("puremourning/vimspector")
     ----------------------------------------------
