@@ -58,7 +58,7 @@ packer.startup({
       requires = { "nvim-lua/plenary.nvim" },
     })
     -- telescope extensions
-    use("LinArcX/telescope-env.nvim")
+    -- use("LinArcX/telescope-env.nvim")
     use("nvim-telescope/telescope-ui-select.nvim")
     -- dashboard-nvim
     use("glepnir/dashboard-nvim")
@@ -69,7 +69,7 @@ packer.startup({
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
     })
-    use("p00f/nvim-ts-rainbow")
+    -- use("p00f/nvim-ts-rainbow")
     -- indent-blankline
     use("lukas-reineke/indent-blankline.nvim")
     --------------------- LSP --------------------
@@ -94,21 +94,23 @@ packer.startup({
     use("onsails/lspkind-nvim")
     use("tami5/lspsaga.nvim")
     -- 代码格式化
-    use("mhartington/formatter.nvim")
+    -- use("mhartington/formatter.nvim")
     use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
     -- TypeScript 增强
-    use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
+    -- use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
     -- Lua 增强
-    use("folke/lua-dev.nvim")
+    -- use("folke/lua-dev.nvim")
     -- JSON 增强
-    use("b0o/schemastore.nvim")
+    -- use("b0o/schemastore.nvim")
     -- Rust 增强
-    use("simrat39/rust-tools.nvim")
+    -- use("simrat39/rust-tools.nvim")
+    -- Go
+    -- use("ray-x/go.nvim")
     --------------------- colorschemes --------------------
     -- tokyonight
-    use("folke/tokyonight.nvim")
+    -- use("folke/tokyonight.nvim")
     -- OceanicNext
-    use("mhartington/oceanic-next")
+    -- use("mhartington/oceanic-next")
     -- gruvbox
     use({
       "ellisonleao/gruvbox.nvim",
@@ -117,28 +119,28 @@ packer.startup({
     -- zephyr
     -- use("glepnir/zephyr-nvim")
     -- nord
-    use("shaunsingh/nord.nvim")
+    -- use("shaunsingh/nord.nvim")
     -- onedark
-    use("ful1e5/onedark.nvim")
+    -- use("ful1e5/onedark.nvim")
     -- nightfox
-    use("EdenEast/nightfox.nvim")
+    -- use("EdenEast/nightfox.nvim")
 
     -------------------------------------------------------
-    use({ "akinsho/toggleterm.nvim" })
+    -- use({ "akinsho/toggleterm.nvim" })
     -- surround
-    use("ur4ltz/surround.nvim")
+    -- use("ur4ltz/surround.nvim")
     -- Comment
-    use("numToStr/Comment.nvim")
+    -- use("numToStr/Comment.nvim")
     -- nvim-autopairs
-    use("windwp/nvim-autopairs")
+    -- use("windwp/nvim-autopairs")
     -- git
-    use({ "lewis6991/gitsigns.nvim" })
+    -- use({ "lewis6991/gitsigns.nvim" })
     -- vimspector
-    use("puremourning/vimspector")
+    -- use("puremourning/vimspector")
     ----------------------------------------------
-    use("mfussenegger/nvim-dap")
-    use("theHamsta/nvim-dap-virtual-text")
-    use("rcarriga/nvim-dap-ui")
+    -- use("mfussenegger/nvim-dap")
+    -- use("theHamsta/nvim-dap-virtual-text")
+    -- use("rcarriga/nvim-dap-ui")
     -- use("Pocco81/DAPInstall.nvim")
     -- use("jbyuki/one-small-step-for-vimkind")
 

@@ -7,7 +7,8 @@ end
 treesitter.setup({
   -- 安装 language parser
   -- :TSInstallInfo 命令查看支持的语言
-  ensure_installed = { "json", "html", "css", "vim", "lua", "javascript", "typescript", "tsx" },
+  -- ensure_installed = { "json", "html", "css", "vim", "lua", "javascript", "typescript", "tsx" },
+  ensure_installed = { "go" },
   -- ensure_installed = "maintained",
 
   -- 启用代码高亮模块
@@ -30,21 +31,21 @@ treesitter.setup({
     enable = true,
   },
   -- p00f/nvim-ts-rainbow
-  rainbow = {
-    enable = true,
-    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    colors = {
-      "#95ca60",
-      "#ee6985",
-      "#D6A760",
-      "#7794f4",
-      "#b38bf5",
-      "#7cc7fe",
-    }, -- table of hex strings
-    -- termcolors = { } -- table of colour name strings
-  },
+--   rainbow = {
+--     enable = true,
+--     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+--     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+--     max_file_lines = nil, -- Do not enable for files with more than n lines, int
+--     colors = {
+--       "#95ca60",
+--       "#ee6985",
+--       "#D6A760",
+--       "#7794f4",
+--       "#b38bf5",
+--       "#7cc7fe",
+--     }, -- table of hex strings
+--     -- termcolors = { } -- table of colour name strings
+--   },
 })
 -- 开启 Folding 模块
 vim.opt.foldmethod = "expr"

@@ -45,6 +45,7 @@ cmp.setup({
 
 -- Use buffer source for `/`.
 cmp.setup.cmdline("/", {
+  mapping = cmp.mapping.preset.cmdline(),
   sources = {
     { name = "buffer" },
   },
