@@ -105,7 +105,7 @@ map("n", "<A-l>", "<C-w>l", opt)
 map("n", "<A-t>", ":sp | terminal<CR>", opt)
 -- map("n", "stv", ":vsp | terminal<CR>", opt)
 -- Esc 回 Normal 模式
-map("t", "<Esc>", "<C-\\><C-n>", opt)
+-- map("t", "<Esc>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
@@ -120,7 +120,7 @@ local pluginKeys = {}
 
 -- treesitter 折叠
 -- map("n", "zz", ":foldclose<CR>", opt)
-map("n", "Z", ":foldopen<CR>", opt)
+-- map("n", "Z", ":foldopen<CR>", opt)
 
 -- nvim-tree
 -- map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
