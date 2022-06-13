@@ -172,6 +172,7 @@ map("n", "<C-w>", ":Bdelete!<CR>", opt)
 -- map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
+map("n", "<A-p>", ":Telescope projects<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- Telescope 列表中 插入模式快捷键
@@ -248,8 +249,8 @@ pluginKeys.mapLSP = function(mapbuf)
   --]]
   -- diagnostic
 --   mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opt)
---   mapbuf("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
---   mapbuf("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
+--   mapbuf("n", "ej", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
+--   mapbuf("n", "ek", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
 --   mapbuf("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
   -- 未用
   -- mapbuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
