@@ -173,6 +173,7 @@ map("n", "<C-w>", ":Bdelete!<CR>", opt)
 -- map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
+map("n", "<A-p>", ":Telescope projects<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- Telescope 列表中 插入模式快捷键
