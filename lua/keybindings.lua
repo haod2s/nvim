@@ -151,6 +151,7 @@ pluginKeys.nvimTreeList = { -- 打开文件或文件夹
   { key = "gy", action = "copy_absolute_path" },
   { key = "I", action = "toggle_file_info" },
   { key = "n", action = "tabnew" },
+  { key = "W", action = "collapse_all" },
   -- 进入下一级
   { key = { "]" }, action = "cd" },
   -- 进入上一级
@@ -249,8 +250,8 @@ pluginKeys.mapLSP = function(mapbuf)
   --]]
   -- diagnostic
 --   mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opt)
---   mapbuf("n", "ej", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
---   mapbuf("n", "ek", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
+  mapbuf("n", "ej", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
+  mapbuf("n", "ek", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
 --   mapbuf("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
   -- 未用
   -- mapbuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
