@@ -2,7 +2,7 @@ vim.g.dashboard_default_executive = "telescope"
 -- vim.g.dashboard_custom_footer = { "https://github.com/nshen/learn-neovim-lua" }
 
 vim.g.dashboard_custom_section = {
-  a = { description = { "  empty                 " }, command = "enew" }
+  a = { description = { "  empty                 " }, command = "enew" },
   b = { description = { "  Projects              " }, command = "Telescope projects" },
   c = { description = { "  Recently files        " }, command = "Telescope oldfiles" },
   d = { description = { "  Edit keybindings      " }, command = "edit ~/.config/nvim/lua/keybindings.lua" },
