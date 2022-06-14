@@ -479,4 +479,7 @@ pluginKeys.vgitList = {
 -- laygit
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", opt)
 
+-- outline
+map("n", "<F2>", ":SymbolsOutline<CR>", opt)
+
 return pluginKeys
