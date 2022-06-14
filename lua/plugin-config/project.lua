@@ -12,18 +12,9 @@ end
 
 vim.g.nvim_tree_respect_buf_cwd = 1
 project.setup({
-  detection_methods = { "lsp", "pattern" },
+  detection_methods = { "lsp", "pattern", "!gopath/pkg/mod" },
   patterns = {
-    "README.md",
-    "Cargo.toml",
-    "package.json",
-    ".sln",
-    ".git",
-    "_darcs",
-    ".hg",
-    ".bzr",
-    ".svn",
-    "Makefile",
+    ".git"
   },
 })
 
