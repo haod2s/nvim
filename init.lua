@@ -22,7 +22,7 @@ require("plugin-config.vgit")
 -- require("plugin-config.go")
 -- require("plugin-config.toggleterm")
 -- require("plugin-config.surround")
--- require("plugin-config.comment")
+require("plugin-config.comment")
 -- require("plugin-config.nvim-autopairs")
 -- require("plugin-config.fidget")
 -- 内置LSP
