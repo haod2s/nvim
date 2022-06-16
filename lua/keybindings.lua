@@ -102,10 +102,11 @@ map("n", "<A-l>", "<C-w>l", opt)
 
 -- Terminal相关
 -- map("n", "st", ":sp | terminal<CR>", opt)
-map("n", "<A-t>", ":sp | terminal<CR>", opt)
+map("n", "<F4>", ":sp | terminal<CR>", opt)
 -- map("n", "stv", ":vsp | terminal<CR>", opt)
 -- Esc 回 Normal 模式
 -- map("t", "<Esc>", "<C-\\><C-n>", opt)
+map("t", "<F4>", "<C-\\><C-n>:q!<CR>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
@@ -201,21 +202,21 @@ pluginKeys.telescopeList = {
 
 -- 代码注释插件
 -- see ./lua/plugin-config/comment.lua
--- pluginKeys.comment = {
---   -- Normal 模式快捷键
---   toggler = {
---     line = "gcc", -- 行注释
---     block = "gbc", -- 块注释
---   },
---   -- Visual 模式
---   opleader = {
---     line = "gc",
---     bock = "gb",
---   },
--- }
+pluginKeys.comment = {
+  -- Normal 模式快捷键
+  toggler = {
+    line = "gcc", -- 行注释
+    block = "gbc", -- 块注释
+  },
+  -- Visual 模式
+  opleader = {
+    line = "gc",
+    bock = "gb",
+  },
+}
 -- ctrl + /
--- map("n", "<C-_>", "gcc", { noremap = false })
--- map("v", "<C-_>", "gcc", { noremap = false })
+map("n", "<C-_>", "gcc", { noremap = false })
+map("v", "<C-_>", "gcc", { noremap = false })
 -- 代码注释插件 end
 
 -- lsp 回调函数快捷键设置
@@ -478,5 +479,8 @@ pluginKeys.vgitList = {
 
 -- laygit
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", opt)
+
+-- outline
+map("n", "<F2>", ":SymbolsOutline<CR>", opt)
 
 return pluginKeys

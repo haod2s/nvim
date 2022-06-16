@@ -14,8 +14,9 @@ vim.g.nvim_tree_respect_buf_cwd = 1
 project.setup({
   detection_methods = { "lsp", "pattern", "!gopath/pkg/mod" },
   patterns = {
-    ".git",
+    ".git"
   },
+  exclude_dirs = { "~/gopath/pkg/*" }
 })
 
 local status_telescope, telescope = pcall(require, "telescope")

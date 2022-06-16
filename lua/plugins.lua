@@ -130,7 +130,7 @@ packer.startup({
     -- surround
     -- use("ur4ltz/surround.nvim")
     -- Comment
-    -- use("numToStr/Comment.nvim")
+    use("numToStr/Comment.nvim")
     -- nvim-autopairs
     -- use("windwp/nvim-autopairs")
     -- git
@@ -147,6 +147,7 @@ packer.startup({
     -- use("jbyuki/one-small-step-for-vimkind")
 
     use("j-hui/fidget.nvim")
+    use("simrat39/symbols-outline.nvim")
     if paccker_bootstrap then
       packer.sync()
     end
