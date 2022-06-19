@@ -108,7 +108,7 @@ packer.startup({
     -- use("ray-x/go.nvim")
     --------------------- colorschemes --------------------
     -- tokyonight
-    -- use("folke/tokyonight.nvim")
+    use("folke/tokyonight.nvim")
     -- OceanicNext
     -- use("mhartington/oceanic-next")
     -- gruvbox
