@@ -75,6 +75,7 @@ null_ls.setup({
     -- vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()']])
     if client.resolved_capabilities.document_formatting then
       vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+      vim.api.nvim_exec([[ autocmd BufWritePre *.go :silent! lua require('go.format').goimport() ]], false)
     end
   end,
 })

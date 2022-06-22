@@ -7,7 +7,7 @@ require("plugins")
 -- 主题设置
 require("colorscheme")
 -- 自动命令
--- require("autocmds")
+require("autocmds")
 -- 插件配置
 require("plugin-config.nvim-tree")
 require("plugin-config.bufferline")
