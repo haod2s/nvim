@@ -126,7 +126,7 @@ packer.startup({
     -- use("EdenEast/nightfox.nvim")
 
     -------------------------------------------------------
-    -- use({ "akinsho/toggleterm.nvim" })
+    use({ "akinsho/toggleterm.nvim" })
     -- surround
     -- use("ur4ltz/surround.nvim")
     -- Comment
@@ -136,7 +136,6 @@ packer.startup({
     -- git
     use({ "lewis6991/gitsigns.nvim" })
     use({"tanvirtin/vgit.nvim", requires = {"nvim-lua/plenary.nvim"},})
-    use("kdheepak/lazygit.nvim")
     -- vimspector
     -- use("puremourning/vimspector")
     ----------------------------------------------

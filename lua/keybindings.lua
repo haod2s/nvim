@@ -399,12 +399,12 @@ end
 -- <leader>tc 下方
 -- 特殊lazygit 窗口，需要安装lazygit
 -- <leader>tg lazygit
--- pluginKeys.mapToggleTerm = function(toggleterm)
---   vim.keymap.set({ "n", "t" }, "<leader>ta", toggleterm.toggleA)
---   vim.keymap.set({ "n", "t" }, "<leader>tb", toggleterm.toggleB)
---   vim.keymap.set({ "n", "t" }, "<leader>tc", toggleterm.toggleC)
---   vim.keymap.set({ "n", "t" }, "<leader>tg", toggleterm.toggleG)
--- end
+pluginKeys.mapToggleTerm = function(toggleterm)
+  vim.keymap.set({ "n", "t" }, "<leader>ta", toggleterm.toggleA)
+  vim.keymap.set({ "n", "t" }, "<leader>tb", toggleterm.toggleB)
+  vim.keymap.set({ "n", "t" }, "<leader>tc", toggleterm.toggleC)
+  vim.keymap.set({ "n", "t" }, "<leader>tg", toggleterm.toggleG)
+end
 -- toggleterm end
 
 -- gitsigns
@@ -477,9 +477,6 @@ pluginKeys.vgitList = {
     ['n <leader>gq'] = 'project_hunks_qf',
     ['n <leader>gx'] = 'toggle_diff_preference',
 }
-
--- laygit
-map("n", "<leader>gg", "<cmd>LazyGit<CR>", opt)
 
 -- outline
 map("n", "<F2>", ":SymbolsOutline<CR>", opt)
