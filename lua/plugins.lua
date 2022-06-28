@@ -147,6 +147,14 @@ packer.startup({
 
     use("j-hui/fidget.nvim")
     use("simrat39/symbols-outline.nvim")
+    use {
+      'phaazon/hop.nvim',
+      branch = 'v1', -- optional but strongly recommended
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+        require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      end
+    }
     if paccker_bootstrap then
       packer.sync()
     end

@@ -56,6 +56,7 @@ map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 -- 在visual mode 里粘贴不要复制
+map("n", "<leader>hp", ":HopPattern<CR>", opt)
 map("v", "p", '"_dP', opt)
 
 -- 退出
@@ -480,5 +481,9 @@ pluginKeys.vgitList = {
 
 -- outline
 map("n", "<F2>", ":SymbolsOutline<CR>", opt)
+
+-- hop
+map("n", "<leader>s", ":HopPattern<CR>", opt)
+map("n", "f", ":HopChar1<CR>", opt)
 
 return pluginKeys
