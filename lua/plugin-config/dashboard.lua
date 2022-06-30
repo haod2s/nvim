@@ -10,30 +10,34 @@ db.custom_footer = {
 --   "https://github.com/nshen/learn-neovim-lua",
 }
 
+db.hide_statusline = false
+vim.api.nvim_command('hi DashboardHeader guifg=#FF8700')
+vim.api.nvim_command('hi DashboardCenter guifg=#D7D700')
+
 db.custom_center = {
   {
 	icon = "  ",
-	desc = "Empty", 
+	desc = "Empty           ", 
 	action = "enew",
   },
   {
     icon = "  ",
-    desc = "Projects                            ",
+    desc = "Projects        ",
     action = "Telescope projects",
   },
   {
     icon = "  ",
-    desc = "Recently files                      ",
+    desc = "Recently files  ",
     action = "Telescope oldfiles",
   },
   {
     icon = "  ",
-    desc = "Edit keybindings                    ",
+    desc = "Edit keybindings",
     action = "edit ~/.config/nvim/lua/keybindings.lua",
   },
   {
     icon = "  ",
-    desc = "Edit Projects                       ",
+    desc = "Edit Projects   ",
     action = "edit ~/.local/share/nvim/project_nvim/project_history",
   },
   -- {
@@ -63,17 +67,6 @@ db.custom_center = {
   -- },
 }
 
-db.custom_header = {
-  [[]],
-  [[ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗]],
-  [[ ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║]],
-  [[ ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║]],
-  [[ ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║]],
-  [[ ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║]],
-  [[ ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
-  [[                                                   ]],
-  [[                [ version : 0.7.2 ]                ]],
-}
 
 db.custom_header = {
   [[]],
@@ -123,3 +116,18 @@ db.custom_header = {
   [[]],
   [[]],
 }
+
+db.custom_header = {
+  [[]],
+  [[ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗]],
+  [[ ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║]],
+  [[ ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║]],
+  [[ ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║]],
+  [[ ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║]],
+  [[ ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+  [[                                                   ]],
+  [[                [ version : 0.7.2 ]                ]],
+  [[]],
+  [[]],
+}
+
