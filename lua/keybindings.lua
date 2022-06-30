@@ -56,6 +56,7 @@ map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 -- 在visual mode 里粘贴不要复制
+map("n", "<leader>hp", ":HopPattern<CR>", opt)
 map("v", "p", '"_dP', opt)
 
 -- 退出
@@ -399,12 +400,12 @@ end
 -- <leader>tc 下方
 -- 特殊lazygit 窗口，需要安装lazygit
 -- <leader>tg lazygit
--- pluginKeys.mapToggleTerm = function(toggleterm)
---   vim.keymap.set({ "n", "t" }, "<leader>ta", toggleterm.toggleA)
---   vim.keymap.set({ "n", "t" }, "<leader>tb", toggleterm.toggleB)
---   vim.keymap.set({ "n", "t" }, "<leader>tc", toggleterm.toggleC)
---   vim.keymap.set({ "n", "t" }, "<leader>tg", toggleterm.toggleG)
--- end
+pluginKeys.mapToggleTerm = function(toggleterm)
+  vim.keymap.set({ "n", "t" }, "<leader>ta", toggleterm.toggleA)
+  vim.keymap.set({ "n", "t" }, "<leader>tb", toggleterm.toggleB)
+  vim.keymap.set({ "n", "t" }, "<leader>tc", toggleterm.toggleC)
+  vim.keymap.set({ "n", "t" }, "<leader>tg", toggleterm.toggleG)
+end
 -- toggleterm end
 
 -- gitsigns
@@ -478,10 +479,12 @@ pluginKeys.vgitList = {
     ['n <leader>gx'] = 'toggle_diff_preference',
 }
 
--- laygit
-map("n", "<leader>gg", "<cmd>LazyGit<CR>", opt)
-
 -- outline
 map("n", "<F2>", ":SymbolsOutline<CR>", opt)
+
+-- hop
+-- map("n", "<leader>s", ":HopPattern<CR>", opt)
+map("n", "<leader>w", ":HopWord<CR>", opt)
+map("n", "f", ":HopChar1<CR>", opt)
 
 return pluginKeys
