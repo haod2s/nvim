@@ -155,6 +155,9 @@ packer.startup({
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
+    use {
+      'MattesGroeger/vim-bookmarks'
+    }
     if paccker_bootstrap then
       packer.sync()
     end
