@@ -156,7 +156,11 @@ packer.startup({
       end
     }
     use {
-      'MattesGroeger/vim-bookmarks'
+      "folke/todo-comments.nvim",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require("todo-comments").setup {}
+      end
     }
     if paccker_bootstrap then
       packer.sync()
