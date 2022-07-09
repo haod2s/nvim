@@ -170,9 +170,9 @@ map("n", "<C-w>", ":Bdelete!<CR>", opt)
 -- map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
 -- map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
 -- 关闭其他标签页
--- map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
+map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 -- 关闭选中标签页
--- map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
+map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
 map("n", "<A-p>", ":Telescope projects<CR>", opt)
