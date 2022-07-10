@@ -155,6 +155,13 @@ packer.startup({
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
+    use {
+      "folke/todo-comments.nvim",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require("todo-comments").setup {}
+      end
+    }
     if paccker_bootstrap then
       packer.sync()
     end
