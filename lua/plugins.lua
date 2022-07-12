@@ -162,6 +162,7 @@ packer.startup({
         require("todo-comments").setup {}
       end
     }
+    use { 'lukas-reineke/virt-column.nvim' }
     if paccker_bootstrap then
       packer.sync()
     end
