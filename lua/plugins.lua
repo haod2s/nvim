@@ -105,7 +105,7 @@ packer.startup({
     -- Rust 增强
     -- use("simrat39/rust-tools.nvim")
     -- Go
-    use("ray-x/go.nvim")
+    use { 'fatih/vim-go' }
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
