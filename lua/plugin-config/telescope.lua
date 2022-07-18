@@ -13,6 +13,7 @@ telescope.setup({
     layout_strategy = "horizontal",
     -- 窗口内快捷键
     mappings = require("keybindings").telescopeList,
+    file_ignore_patterns = { "^vendor/" },
   },
   pickers = {
     find_files = {
