@@ -137,7 +137,7 @@ packer.startup({
     use({ "lewis6991/gitsigns.nvim" })
     use({"tanvirtin/vgit.nvim", requires = {"nvim-lua/plenary.nvim"},})
     -- vimspector
-    -- use("puremourning/vimspector")
+    use("puremourning/vimspector")
     ----------------------------------------------
     -- use("mfussenegger/nvim-dap")
     -- use("theHamsta/nvim-dap-virtual-text")
