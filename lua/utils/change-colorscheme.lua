@@ -23,14 +23,14 @@ local mini = {
 
 local function enter(prompt_buffer)
     local selected = action_state.get_selected_entry()
-    local cmd = 'colorscheme ' .. selected[1]
+    local cmd = string.format('require(\\"themes.%s\\")', selected[1])
     -- 执行命令，不保存
-    vim.cmd(cmd)
+    -- vim.cmd(cmd)
     -- 修改文件
-    -- vim.cmd(
-    --   'silent !echo "-- Do not change this file, use :ChangeColorScheme instead" > ~/.config/nvim/lua/colorscheme.lua'
-    -- )
-    -- vim.cmd("silent !echo \"vim.cmd('" .. cmd .. "')\" >> ~/.config/nvim/lua/colorscheme.lua")
+    vim.cmd(
+      'silent !echo "-- Do not change this file, use :ChangeColorScheme instead" > ~/.config/nvim/lua/colorscheme.lua'
+    )
+    vim.cmd(string.format('silent !echo "%s" >> ~/.config/nvim/lua/colorscheme.lua', cmd))
     actions.close(prompt_buffer)
 end
 
@@ -71,7 +71,7 @@ function CC()
     colorPicker:find()
 end
 
-vim.api.nvim_add_user_command('ChangeColorScheme', CC, {})
+vim.api.nvim_create_user_command('ChangeColorScheme', CC, {})
 
 -- vim.g.tokyonight_style = "night"
 -- vim.g.tokyonight_italic_functions = true

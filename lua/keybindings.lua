@@ -489,6 +489,6 @@ map("n", "<F2>", ":SymbolsOutline<CR>", opt)
 map("n", "<leader>w", ":HopWord<CR>", opt)
 map("n", "f", ":HopChar1<CR>", opt)
 
-map("n", "<F11>", ":windo lcl|ccl<CR>", opt)
+-- map("n", "<F11>", ":windo lcl|ccl<CR>", opt)
 
 return pluginKeys

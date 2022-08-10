@@ -9,7 +9,7 @@ lualine.setup({
     -- 指定皮肤
     -- https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
     -- theme = "tokyonight",
-    theme = "gruvbox",
+    theme = "auto",
     -- 分割线
     component_separators = {
       left = "|",

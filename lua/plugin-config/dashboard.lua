@@ -11,8 +11,8 @@ db.custom_footer = {
 }
 
 db.hide_statusline = false
-vim.api.nvim_command('hi DashboardHeader guifg=#FF8700')
-vim.api.nvim_command('hi DashboardCenter guifg=#D7D700')
+-- vim.api.nvim_command('hi DashboardHeader guifg=#FF8700')
+-- vim.api.nvim_command('hi DashboardCenter guifg=#D7D700')
 
 db.custom_center = {
   {

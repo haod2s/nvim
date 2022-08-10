@@ -121,9 +121,9 @@ packer.startup({
     -- nord
     -- use("shaunsingh/nord.nvim")
     -- onedark
-    -- use("ful1e5/onedark.nvim")
+    use("ful1e5/onedark.nvim")
     -- nightfox
-    -- use("EdenEast/nightfox.nvim")
+    use("EdenEast/nightfox.nvim")
 
     -------------------------------------------------------
     use({ "akinsho/toggleterm.nvim" })

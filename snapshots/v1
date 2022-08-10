@@ -71,9 +71,6 @@
   "Comment.nvim": {
     "commit": "40f5587"
   },
-  "gruvbox.nvim": {
-    "commit": "7293097"
-  },
   "cmp-nvim-lsp": {
     "commit": "e6b5feb"
   },
