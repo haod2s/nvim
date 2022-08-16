@@ -103,11 +103,11 @@ map("n", "<A-l>", "<C-w>l", opt)
 
 -- Terminal相关
 -- map("n", "st", ":sp | terminal<CR>", opt)
-map("n", "<F4>", ":sp | terminal<CR>", opt)
+map("n", "<C-`>", ":sp | terminal<CR>", opt)
 -- map("n", "stv", ":vsp | terminal<CR>", opt)
 -- Esc 回 Normal 模式
 -- map("t", "<Esc>", "<C-\\><C-n>", opt)
-map("t", "<F4>", "<C-\\><C-n>:q!<CR>", opt)
+map("t", "<C-`>", "<C-\\><C-n>:q!<CR>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
@@ -178,7 +178,7 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 map("n", "<A-p>", ":Telescope projects<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
-map("n", "<leader>v", ":Telescope grep_string<CR>", opt)
+-- map("n", "<leader>v", ":Telescope grep_string<CR>", opt)
 
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
@@ -231,10 +231,8 @@ pluginKeys.mapLSP = function(mapbuf)
   --]]
   -- mapbuf("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opt)
   -- code action
-  --[[
-  Lspsaga 替换 ca
+  -- Lspsaga 替换 ca
   mapbuf("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opt)
-  --]]
   -- mapbuf("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opt)
   -- go xx
   -- mapbuf('n', 'gd', '<cmd>Lspsaga preview_definition<CR>', opt)
@@ -489,6 +487,6 @@ map("n", "<F2>", ":SymbolsOutline<CR>", opt)
 map("n", "<leader>w", ":HopWord<CR>", opt)
 map("n", "f", ":HopChar1<CR>", opt)
 
--- map("n", "<F11>", ":windo lcl|ccl<CR>", opt)
+map("n", "<leader>cw", ":windo lcl|ccl<CR>", opt)
 
 return pluginKeys
