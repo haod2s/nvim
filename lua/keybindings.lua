@@ -175,7 +175,6 @@ map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
-map("n", "<A-p>", ":Telescope projects<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 -- map("n", "<leader>v", ":Telescope grep_string<CR>", opt)
