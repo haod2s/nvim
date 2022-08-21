@@ -81,6 +81,3 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
--- vim-go
-vim.g.go_term_enabled = 1
-vim.g.go_term_mode = "split"

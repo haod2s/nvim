@@ -25,6 +25,7 @@ require("plugin-config.comment")
 require("plugin-config.virt-column")
 -- require("plugin-config.nvim-autopairs")
 -- require("plugin-config.fidget")
+require("plugin-config.go")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")
