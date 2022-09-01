@@ -173,6 +173,8 @@ map("n", "<C-w>", ":Bdelete!<CR>", opt)
 map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 -- 关闭选中标签页
 map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
+-- 选中标签页
+map("n", "<leader>bg", ":BufferLinePick<CR>", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
@@ -187,7 +189,6 @@ pluginKeys.telescopeList = {
     -- ["<C-k>"] = "move_selection_previous",
     ["<Down>"] = "move_selection_next",
     ["<Up>"] = "move_selection_previous",
-    ["<C-n>"] = "move_selection_next",
     ["<C-n>"] = "move_selection_next",
     ["<C-p>"] = "move_selection_previous",
     -- 历史记录
@@ -252,8 +253,8 @@ pluginKeys.mapLSP = function(mapbuf)
   --]]
   -- diagnostic
   -- mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opt)
-  mapbuf("n", "en", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
-  mapbuf("n", "ep", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
+  mapbuf("n", "e]", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
+  mapbuf("n", "e[", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
 --   mapbuf("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
   -- 未用
   -- mapbuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
