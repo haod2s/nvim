@@ -101,12 +101,6 @@
   "vimspector": {
     "commit": "960f044"
   },
-  "lspsaga.nvim": {
-    "commit": "8dde091"
-  },
-  "dashboard-nvim": {
-    "commit": "3b31a80"
-  },
   "lualine-lsp-progress": {
     "commit": "56842d0"
   },
