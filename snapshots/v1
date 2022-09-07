@@ -62,9 +62,6 @@
   "cmp-nvim-lsp-signature-help": {
     "commit": "8014f6d"
   },
-  "telescope.nvim": {
-    "commit": "39b12d8"
-  },
   "Comment.nvim": {
     "commit": "40f5587"
   },
