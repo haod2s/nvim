@@ -125,6 +125,10 @@ packer.startup({
     use("navarasu/onedark.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
+    use {
+      "mcchrish/zenbones.nvim",
+      requires = "rktjmp/lush.nvim"
+    }
 
     -------------------------------------------------------
     use({ "akinsho/toggleterm.nvim" })
